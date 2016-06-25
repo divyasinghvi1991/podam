@@ -284,19 +284,19 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.11</version>
 				<configuration>
-					
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-failsafe-plugin</artifactId>
-				<version>2.11</version>
-				<configuration>
 					<includes>
 						<include>**/*Test.java</include>
 						<include>**/Test*.java</include>
 						<include>**/When*.java</include>
 						<include>**/*TestSuite.java</include>
 					</includes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.11</version>
+				<configuration>
+					<skip>true</skip>
 				</configuration>
 				<executions>
 					<execution>
